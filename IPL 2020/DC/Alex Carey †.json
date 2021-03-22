@@ -1,5 +1,1 @@
-[
-  { "runs": "4", "balls": "7", "fours": "0", "sixes": "0", "SR": "57.14" },
-  { "runs": "14", "balls": "9", "fours": "0", "sixes": "0", "SR": "155.56" },
-  { "runs": "14", "balls": "13", "fours": "0", "sixes": "1", "SR": "107.69" }
-]
+[{"runs":"4","balls":"7","fours":"0","sixes":"0","SR":"57.14","details":{"date":"17 October 2020 - night match (20-over match)","venue":"Sharjah Cricket Stadium","result":"Capitals won by 5 wickets (with 1 ball remaining)","opponent":"CSK"}},{"runs":"14","balls":"9","fours":"0","sixes":"0","SR":"155.56","details":{"date":"11 October 2020 - night match (20-over match)","venue":"Sheikh Zayed Stadium, Abu Dhabi","result":"Mum Indians won by 5 wickets (with 2 balls remaining)","opponent":"MI"}},{"runs":"14","balls":"13","fours":"0","sixes":"1","SR":"107.69","details":{"date":"14 October 2020 - night match (20-over match)","venue":"Dubai International Cricket Stadium","result":"Capitals won by 13 runs","opponent":"RR"}}]

@@ -43,10 +43,6 @@ function cb1(err, res, html) {
   if (err) console.log(err);
 
   let chSelector = cheerio.load(html);
-  //   let tables = chSelector(".batsman-cell.text-truncate.out a");
-  //   for (let i = 0; i < tables.length; i++) {
-  //     console.log(chSelector(tables[i]).text());
-  //   }
 
   let part = chSelector(".Collapsible");
   for (let i = 0; i < part.length; i++) {
@@ -72,19 +68,6 @@ function writeStats(chSelector, data, acronym) {
   for (let i = 0; i < allRows.length - 1; i += 2) {
     //console.log(chSelector(allRows[i]).text());
     let eachbatcol = chSelector(allRows[i]).find("td");
-    // console.log(
-    //   chSelector(eachbatcol[0]).text(),
-    //   chSelector(eachbatcol[2]).text(),
-    //   "=R ",
-    //   chSelector(eachbatcol[3]).text(),
-    //   "=B ",
-    //   chSelector(eachbatcol[5]).text(),
-    //   "=4s ",
-    //   chSelector(eachbatcol[6]).text(),
-    //   "=6s ",
-    //   chSelector(eachbatcol[7]).text(),
-    //   "=SR "
-    // );
     let fileExist = fs.existsSync(
       `./IPL 2020/${acronym}/${chSelector(eachbatcol[0]).text()}.json`
     );
@@ -98,8 +81,24 @@ function writeStats(chSelector, data, acronym) {
       `./IPL 2020/${acronym}/${chSelector(eachbatcol[0]).text()}.json`,
       "utf-8"
     );
-    console.log(content);
     arr = JSON.parse(content);
+    let details = chSelector(".w-100.table.match-details-table");
+
+    let detail = chSelector(details[0]).find("tr");
+    let d = chSelector(detail).find("td");
+    // for (let k = 0; k < d.length; k++)
+    //   console.log(k, chSelector(d[k]).text(), "\n");
+    let result = chSelector(".status-text");
+    let team = chSelector(".match-info.match-info-MATCH .team p");
+    let opponent;
+    for (let i = 0; i < team.length; i++) {
+      let t = chSelector(team[i]).text();
+      let matches = t.match(/\b(\w)/g);
+      opponent = matches.join("");
+      if (opponent == "PK") opponent = "PBKS";
+      if (opponent == "SH") opponent = "SRH";
+      if (opponent != acronym) break;
+    }
 
     arr.push({
       runs: chSelector(eachbatcol[2]).text(),
@@ -107,7 +106,14 @@ function writeStats(chSelector, data, acronym) {
       fours: chSelector(eachbatcol[5]).text(),
       sixes: chSelector(eachbatcol[6]).text(),
       SR: chSelector(eachbatcol[7]).text(),
+      details: {
+        date: chSelector(d[12]).text(),
+        venue: chSelector(d[0]).text(),
+        result: chSelector(result[result.length - 1]).text(),
+        opponent: opponent,
+      },
     });
+
     content = JSON.stringify(arr);
     fs.writeFileSync(
       `./IPL 2020/${acronym}/${chSelector(eachbatcol[0]).text()}.json`,

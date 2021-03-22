@@ -1,1 +1,145 @@
-[{"runs":"13","balls":"19","fours":"2","sixes":"0","SR":"68.42"},{"runs":"8","balls":"9","fours":"1","sixes":"0","SR":"88.89"},{"runs":"42","balls":"40","fours":"4","sixes":"0","SR":"105.00"},{"runs":"71","balls":"48","fours":"6","sixes":"3","SR":"147.92"},{"runs":"30","balls":"30","fours":"2","sixes":"0","SR":"100.00"},{"runs":"39","balls":"27","fours":"3","sixes":"2","SR":"144.44"},{"runs":"2","balls":"3","fours":"0","sixes":"0","SR":"66.67"},{"runs":"38","balls":"20","fours":"5","sixes":"1","SR":"190.00"},{"runs":"45","balls":"25","fours":"1","sixes":"4","SR":"180.00"},{"runs":"30","balls":"27","fours":"3","sixes":"0","SR":"111.11"},{"runs":"41","balls":"34","fours":"3","sixes":"2","SR":"120.59"}]
+[
+  {
+    "runs": "38",
+    "balls": "20",
+    "fours": "5",
+    "sixes": "1",
+    "SR": "190.00",
+    "details": {
+      "date": "29 October 2020 - night match (20-over match)",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Super Kings won by 6 wickets",
+      "opponent": "KKR"
+    }
+  },
+  {
+    "runs": "42",
+    "balls": "40",
+    "fours": "4",
+    "sixes": "0",
+    "SR": "105.00",
+    "details": {
+      "date": "10 October 2020 - night match (20-over match)",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "RCB won by 37 runs",
+      "opponent": "RCB"
+    }
+  },
+  {
+    "runs": "13",
+    "balls": "19",
+    "fours": "2",
+    "sixes": "0",
+    "SR": "68.42",
+    "details": {
+      "date": "19 October 2020 - night match (20-over match)",
+      "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+      "result": "Royals won by 7 wickets (with 15 balls remaining)",
+      "opponent": "RR"
+    }
+  },
+  {
+    "runs": "39",
+    "balls": "27",
+    "fours": "3",
+    "sixes": "2",
+    "SR": "144.44",
+    "details": {
+      "date": "25 October 2020 - day match (20-over match)",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Super Kings won by 8 wickets (with 8 balls remaining)",
+      "opponent": "RCB"
+    }
+  },
+  {
+    "runs": "8",
+    "balls": "9",
+    "fours": "1",
+    "sixes": "0",
+    "SR": "88.89",
+    "details": {
+      "date": "02 October 2020 - night match (20-over match)",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Sunrisers won by 7 runs",
+      "opponent": "SRH"
+    }
+  },
+  {
+    "runs": "30",
+    "balls": "30",
+    "fours": "2",
+    "sixes": "0",
+    "SR": "100.00",
+    "details": {
+      "date": "01 November 2020 - day match (20-over match)",
+      "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+      "result": "Super Kings won by 9 wickets (with 7 balls remaining)",
+      "opponent": "KXP"
+    }
+  },
+  {
+    "runs": "45",
+    "balls": "25",
+    "fours": "1",
+    "sixes": "4",
+    "SR": "180.00",
+    "details": {
+      "date": "17 October 2020 - night match (20-over match)",
+      "venue": "Sharjah Cricket Stadium",
+      "result": "Capitals won by 5 wickets (with 1 ball remaining)",
+      "opponent": "DC"
+    }
+  },
+  {
+    "runs": "2",
+    "balls": "3",
+    "fours": "0",
+    "sixes": "0",
+    "SR": "66.67",
+    "details": {
+      "date": "23 October 2020 - night match (20-over match)",
+      "venue": "Sharjah Cricket Stadium",
+      "result": "Mum Indians won by 10 wickets (with 46 balls remaining)",
+      "opponent": "MI"
+    }
+  },
+  {
+    "runs": "30",
+    "balls": "27",
+    "fours": "3",
+    "sixes": "0",
+    "SR": "111.11",
+    "details": {
+      "date": "07 October 2020 - night match (20-over match)",
+      "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+      "result": "KKR won by 10 runs",
+      "opponent": "KKR"
+    }
+  },
+  {
+    "runs": "41",
+    "balls": "34",
+    "fours": "3",
+    "sixes": "2",
+    "SR": "120.59",
+    "details": {
+      "date": "13 October 2020 - night match (20-over match)",
+      "venue": "Dubai International Cricket Stadium",
+      "result": "Super Kings won by 20 runs",
+      "opponent": "SRH"
+    }
+  },
+  {
+    "runs": "71",
+    "balls": "48",
+    "fours": "6",
+    "sixes": "3",
+    "SR": "147.92",
+    "details": {
+      "date": "19 September 2020 - night match (20-over match)",
+      "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+      "result": "Super Kings won by 5 wickets (with 4 balls remaining)",
+      "opponent": "MI"
+    }
+  }
+]
